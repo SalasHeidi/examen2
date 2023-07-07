@@ -23,18 +23,18 @@ public class CursoController {
 
     @PostMapping(path = "/nuevo")
     public @ResponseBody String addCurso(@RequestParam String name, @RequestParam int creditos) {
-        Curso s = new Curso();
-        s.setNombre(name);
-        s.setCreditos(creditos);
-        cursoRepository.save(s);
+        Curso c = new Curso();
+        c.setNombre(name);
+        c.setCreditos(creditos);
+        cursoRepository.save(c);
         return "Saved";
     }
 
     @DeleteMapping(path = "/eliminar")
     public @ResponseBody String delCurso(@RequestParam Integer id) {
-        Curso s = new Curso();
-        s.setId(id);
-        cursoRepository.delete(s);
+        Curso c = new Curso();
+        c.setId(id);
+        cursoRepository.delete(c);
         return "Deleted";
     }
 
