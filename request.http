@@ -1,0 +1,31 @@
+
+
+get https://ecv2.onrender.com/
+
+###
+
+get https://ecv2.onrender.com/idat/codigo
+
+###
+
+get https://ecv2.onrender.com/idat/nombre-completo
+
+###
+
+get https://ecv2.onrender.com/api/curso/listar
+
+###
+
+Post https://ecv2.onrender.com/api/curso/nuevo
+Content-Type: application/x-www-form-urlencoded
+
+name=Fisica
+&creditos=6
+
+
+###
+
+DELETE https://ecv2.onrender.com/api/curso/eliminar
+Content-Type: application/x-www-form-urlencoded
+
+id=1
